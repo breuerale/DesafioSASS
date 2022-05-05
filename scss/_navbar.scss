@@ -1,0 +1,89 @@
+//Hago todo lo relativo al navbar, anido etiquetas
+
+*{
+    font-family: 'Dancing Script', cursive ,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    align-items: center;
+    grid-template-areas: "menue1 logotipo menue2 iconos";
+    grid-template:       "menue1 logotipo menue2 iconos" 150px /
+                            38.5%     20%     38.5%  auto;
+    background-color: $colorFondo;
+    .menue1{
+        nav{
+            ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-evenly;
+                display: flex;
+                li{
+                    &:hover, &:active{
+                        background-color:$colorHover;
+                        font-weight: 500;
+                        font-size: large;
+                        border: none;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        transition: .3s ease all;
+                        border-radius: 5px;
+                    }
+                    a{
+                        color:$colorAnchor;
+                        text-decoration: none;
+                        font-size: larger;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .logotipo{
+        grid-area:logotipo;
+        display: flex;
+        justify-content: space-around;
+        img{
+            padding-top: 10px;
+            width: 150px ;
+            height:150px ;
+            border-radius: 50%;
+        }
+    }
+    .menue2{
+        
+        grid-area: menue2;
+        nav{
+            ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-evenly;
+                display: flex;
+                li{
+                    &:hover, &:active{
+                        background-color:$colorHover;
+                        font-weight: 500;
+                        font-size: large;
+                        border: none;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        transition: .3s ease all;
+                        border-radius: 5px;
+                    }
+                    a{
+                        color:$colorAnchor;
+                        text-decoration: none;
+                        font-size: larger;
+                        text-transform: uppercase;
+                        font-size: larger;
+                    }
+                }
+            }
+        }
+    }
+    .iconos{
+        grid-area: iconos;
+    }
+
+}

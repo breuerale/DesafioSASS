@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/171eea792d.js" crossorigin="anonymous"></script>
+    <!-- Linkeo Bootstrap siempre primero, es decir, antes de mi hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Proyecto Bootstrap productos</title>
+</head>
+<body>
+        <header class="gridEncabezado">
+
+            <div class="menue1">
+                <nav class="nav1">
+                    <ul class="menu1">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="logotipo" data-aos="fade-down">
+                <img class="logo" src="../assets/image/logo.jpg" alt="logo">
+            </div>
+            
+            <div class="menue2">
+                <nav class="nav2">
+                    <ul class="menu2">
+                        <li><a href="ubicacion.html">Ubicacion</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotras.html">Nosotras</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="iconos">
+                <i class="fa-solid fa-right-to-bracket "></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+        <main>
+            <!-- Creo una seccion para hacer unas cards de los productos, utilizo Bootstrap -->
+            <section class="container">
+                <div class="row prod-1" >
+                    <div class="col-lg-6 col-sm-12 contenedor-productos ">
+                        <h1 class="titulo-productos"><b>Productos</b></h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 contenedor-barra ">
+                        <form class="d-flex" >
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-succes" type="submit"><b>Buscar</b></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row prod-card">
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/tortachoco.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image\rogel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/tartas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/image/tortamixta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row prod-card ">
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/3tortas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/box1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/baileys.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/maracuya.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row prod-card ">
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/pepitos.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/corazon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/tortachoco.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 card" style="width: 18rem;">
+                        <img src="../assets/image/tortachoco.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container-fluid footer">
+            <div class="row fila-footer">
+                <div class="col-lg-4 col-12 contenedor-formulario">
+                    <h3>Noticias!:</h3>
+                    <div class="formulario">
+                        <form class="form" action="">
+                            <label for="">Ingresa tu email y recibi todas las novedades!</label>
+                            <input type="email" name="email" id="">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 contenedor-pie">
+                    <div class="pie">
+                        <p class="derechos">
+                            <b>Merak Sweet©2022 Todos los Derechos reservados </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="redes">
+                        <h2 class="redes-titulo">Redes:</h2>
+                        <i class="fa-brands fa-instagram-square fa-xl"></i>
+                        <i class="fa-brands fa-whatsapp-square fa-xl"></i>
+                        <i class="fa-brands fa-facebook-square fa-xl"></i>
+                        <i class="fa-brands fa-twitter-square fa-xl"></i>
+                        <i class="fa-brands fa-pinterest-square fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Linkeo Javascript siempre al final del Body(Buena practica)  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+        
+</html>
+
+
+

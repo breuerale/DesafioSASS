@@ -1,0 +1,40 @@
+//Realizo el footer
+
+*{
+    font-family: 'Dancing Script', cursive ,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin-top: 2%;
+    background-color:$colorFondo;
+    div{
+        align-items: baseline;
+        .contenedor-formulario{
+            display: flex;
+            align-items: flex-end;
+            align-items: center;
+            h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+        .contenedor-pie{
+            .pie{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        div{
+            .redes{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                h2{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+            }
+        }
+    }
+}
+

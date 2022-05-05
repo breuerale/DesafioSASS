@@ -1,0 +1,78 @@
+//Realizo lo que seria el main de index
+
+*{
+    font-family: 'Dancing Script', cursive ,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    .seccion1{
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+    }
+}
+
+
+//Realizo la seccion1 con el carousel
+
+.carrusel{
+    div{
+        .baileys{
+            height: 700px;
+        }
+        .baileys-texto{
+            color:$colorCarousel;
+            font-size: x-large;
+            h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+    }
+    div{
+        .coquitorta{
+            height: 700px;
+        }
+        .coquitorta-texto{
+            color:$colorCarousel;
+            font-size: x-large;
+        }
+    }
+    div{
+        .maracuya{
+            height: 700px;
+        }
+        .maracuya-texto{
+            color:$colorCarousel;
+            font-size: x-large;
+        }
+    }
+}
+
+main{
+    .seccion2{
+        display: flex;
+        .fservicios{
+            .tortasPostres{
+                width: 200px;
+                height: 200px;
+            }
+            h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+            .mesadulce{
+                width: 200px;
+                height: 200px;
+            }
+            .boxes{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
