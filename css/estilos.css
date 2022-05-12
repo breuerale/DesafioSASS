@@ -13,8 +13,7 @@ header {
   header .menue1 nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
-    display: flex; }
+    justify-content: space-evenly; }
     header .menue1 nav ul li:hover, header .menue1 nav ul li:active {
       background-color: #c81ace;
       font-weight: 500;
@@ -22,13 +21,14 @@ header {
       border: none;
       cursor: pointer;
       text-transform: uppercase;
-      transition: .3s ease all;
+      transition: 0.3s ease all;
       border-radius: 5px; }
     header .menue1 nav ul li a {
       color: #130202;
       text-decoration: none;
       font-size: larger;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: larger; }
   header .logotipo {
     grid-area: logotipo;
     display: flex;
@@ -43,8 +43,7 @@ header {
     header .menue2 nav ul {
       display: flex;
       list-style-type: none;
-      justify-content: space-evenly;
-      display: flex; }
+      justify-content: space-evenly; }
       header .menue2 nav ul li:hover, header .menue2 nav ul li:active {
         background-color: #c81ace;
         font-weight: 500;
@@ -52,7 +51,7 @@ header {
         border: none;
         cursor: pointer;
         text-transform: uppercase;
-        transition: .3s ease all;
+        transition: 0.3s ease all;
         border-radius: 5px; }
       header .menue2 nav ul li a {
         color: #130202;
@@ -93,12 +92,18 @@ main .seccion1 h2 {
   color: red;
   font-size: x-large; }
 
+.carrusel div h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
 .carrusel div .maracuya {
   height: 700px; }
 
 .carrusel div .maracuya-texto {
   color: red;
   font-size: x-large; }
+
+.carrusel div h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 main .seccion2 {
   display: flex; }
@@ -124,19 +129,15 @@ footer {
   background-color: lavenderblush; }
   footer div {
     align-items: baseline; }
-    footer div .contenedor-formulario {
+    footer div .contenedor-formulario, footer div .contenedor-pie .pie, footer div div .redes {
       display: flex;
-      align-items: flex-end;
       align-items: center; }
-      footer div .contenedor-formulario h3 {
+      footer div .contenedor-formulario h3, footer div .contenedor-pie .pie h3, footer div div .redes h3 {
         font-family: Verdana, Geneva, Tahoma, sans-serif; }
     footer div .contenedor-pie .pie {
-      display: flex;
       flex-direction: row;
       justify-content: center; }
     footer div div .redes {
-      display: flex;
-      align-items: center;
       justify-content: space-evenly; }
       footer div div .redes h2 {
         font-family: Verdana, Geneva, Tahoma, sans-serif; }

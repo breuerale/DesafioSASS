@@ -5,6 +5,37 @@
     margin: 0;
     padding: 0;
 }
+
+
+//Mixing
+//Con parametro
+@mixin lis($font-al,$font-t,$bord,$cursor,$texto,$transicion,$borde){
+    font-weight:$font-al;
+    font-size:$font-t;
+    border:$bord;
+    cursor:$cursor;
+    text-transform:$texto;
+    transition:$transicion;
+    border-radius:$borde;
+}
+
+//Sin parametro
+
+@mixin as{
+    color:$colorAnchor;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+@mixin uls{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
 header{
     display: grid;
     align-items: center;
@@ -15,26 +46,14 @@ header{
     .menue1{
         nav{
             ul{
-                display: flex;
-                list-style-type: none;
-                justify-content: space-evenly;
-                display: flex;
+                @include uls;
                 li{
                     &:hover, &:active{
                         background-color:$colorHover;
-                        font-weight: 500;
-                        font-size: large;
-                        border: none;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        transition: .3s ease all;
-                        border-radius: 5px;
+                        @include lis(500,large,none,pointer,uppercase, .3s ease all, 5px)
                     }
                     a{
-                        color:$colorAnchor;
-                        text-decoration: none;
-                        font-size: larger;
-                        text-transform: uppercase;
+                        @include as;
                     }
                 }
             }
@@ -56,27 +75,14 @@ header{
         grid-area: menue2;
         nav{
             ul{
-                display: flex;
-                list-style-type: none;
-                justify-content: space-evenly;
-                display: flex;
+                @include uls;
                 li{
                     &:hover, &:active{
-                        background-color:$colorHover;
-                        font-weight: 500;
-                        font-size: large;
-                        border: none;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        transition: .3s ease all;
-                        border-radius: 5px;
+                        background-color: $colorHover;
+                        @include lis(500,large,none,pointer,uppercase, .3s ease all, 5px)
                     }
                     a{
-                        color:$colorAnchor;
-                        text-decoration: none;
-                        font-size: larger;
-                        text-transform: uppercase;
-                        font-size: larger;
+                        @include as;
                     }
                 }
             }
